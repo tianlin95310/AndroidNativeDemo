@@ -1,0 +1,7 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+</resources>

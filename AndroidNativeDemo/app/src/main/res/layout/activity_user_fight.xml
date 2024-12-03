@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF8754"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.tl.androidnativedemo.navigationG.fivecheese.view.userfight.TLNetChessView
+        android:id="@+id/tl_chess_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
