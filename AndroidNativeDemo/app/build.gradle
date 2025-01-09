@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
 }
-//apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion 32
 
@@ -14,6 +13,13 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
     }
 
     buildTypes {

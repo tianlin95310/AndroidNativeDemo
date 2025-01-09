@@ -1,13 +1,13 @@
 package com.tl.androidnativedemo.navigation51;
 
-import android.util.Log;
-
 /**
  * Created by tianlin on 2017/5/10.
  * Tel : 15071485690
  * QQ : 953108373
  * Function :
  */
+//生成头文件
+//javac -h . .\MyJniClass.java -encoding utf8
 public class MyJniClass
 {
     /**
@@ -15,7 +15,7 @@ public class MyJniClass
      */
     static
     {
-        System.loadLibrary("jniTest");
+        System.loadLibrary("native-lib");
     }
 
     /***********************调用c函数*********************************/
@@ -80,17 +80,12 @@ public class MyJniClass
      * @return
      */
     public int add(int x, int y) {
-        Log.e("my", "add() x=" + x + " y=" + y);
         return x + y;
     }
     public void helloFromJava() {
-        Log.e("my", "helloFromJava()");
     }
     public void printString(String s) {
-        Log.e("my","C中输入的：" + s);
     }
     public static void sayHello(String s){
-        Log.e("my",  "我是java代码中的JNI."
-                + "java中的sayHello(String s)静态方法，我被C调用了:"+ s);
     }
 }

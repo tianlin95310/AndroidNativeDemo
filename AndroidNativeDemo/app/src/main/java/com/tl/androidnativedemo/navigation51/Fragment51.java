@@ -35,7 +35,14 @@ public class Fragment51 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment51, container, false);
-//        jniClass = new MyJniClass();
+        jniClass = new MyJniClass();
+        f9Sum = view.findViewById(R.id.f9_sum);
+        f9Sum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment51.this.onViewClicked1(view);
+            }
+        });
         return view;
     }
 
